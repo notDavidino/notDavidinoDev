@@ -1,4 +1,19 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿//home scroll function
+$('#WELCOME').click(function () {
+    $('section').addClass('active');
 
-// Write your JavaScript code.
+    $('html,body').animate({
+        scrollTop: $('#ABOUT').offset().top
+    },
+        'slow');
+});
+
+$('a').click(function () {
+    var link = this.href;
+    if (link.startsWith('#')) {
+        $('html,body').animate({
+            scrollTop: $(link).offset().top
+        },
+            'slow');
+    }
+});

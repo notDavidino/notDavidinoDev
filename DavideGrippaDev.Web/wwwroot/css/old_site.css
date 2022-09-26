@@ -30,6 +30,52 @@ html {
   font-size: 14px;
 }
 @media (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    #WELCOME {
+        width: 100vw;
+        height: 100vh;
+        background-color: purple;
+        display: flex;
+    }
+
+    .mainphoto {
+        width: 33%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .websiteTitle {
+        width: 66%;
+        height: 100%;
+        background-color: black;
+    }
+
+    section {
+        display: none;
+    }
+
+    .sectionstyle1 {
+        width: 100vw;
+        height: 100vh;
+        background-color: orange;
+    }
+
+    .sectionstyle2 {
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+        z-index: 9000;
+    }
+
+    .active {
+        display: flex;
+    }
+
   html {
     font-size: 16px;
   }

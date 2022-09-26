@@ -1,2 +1,47 @@
-﻿body {
+﻿* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#WELCOME {
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+    display: flex;
+}
+
+.mainphoto {
+    width: 33%;
+    height: 100%;
+    background-image: url("../media/flyingCube.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.websiteTitle {
+    width: 66%;
+    height: 100%;
+    background-color: black;
+}
+
+section {
+    display: none;
+}
+
+.sectionstyle1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: orange;
+}
+
+.sectionstyle2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    z-index: 9000;
+}
+
+.active {
+    display: flex;
 }
